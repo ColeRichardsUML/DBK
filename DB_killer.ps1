@@ -11,10 +11,6 @@
 # script exists to ensure that Dropbox doesn't start deleting items in the case
 # that the DRIVE is unexpectedly disconnected. 
 
-# In order to properly use the script, check and change information under the 
-# ---VARIABLES AND PARAMETERS--- section. That is where the DRIVE and the 
-# PROCESS are determined. This will later be replaced with argument inputs.
-
 # ---TODO:---
 # create a notification system (via email/push?) for IT
 #	- notification SFX
