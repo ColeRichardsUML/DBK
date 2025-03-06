@@ -66,6 +66,13 @@ $time = (Get-Date).toString("yyyy/MM/dd HH:mm:ss") # init to startup time
 # ---SCRIPT START---
 # start logging
 Start-Transcript -Path $log_path\$log_name
+
+# detect if another instance of the script is already running
+# if yes, ask if user would like to close it and run this instance
+# close this instance if user selects not to close the other
+
+
+
 # send start notification to IT here
 Write-Host "$time $op_str"
 
