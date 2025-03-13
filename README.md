@@ -8,8 +8,8 @@
 	- notification SFX
 		- https://stackoverflow.com/questions/56032478
  - add more information for potentially necessary debug reasons
- ~~- direct interaction with Dropbox
-	- notify when syncing is finshed~~
+ - ~~direct interaction with Dropbox~~
+	- ~~notify when syncing is finshed~~
  - general cleanup and refacturing
 	- functions
  - add an optional GUI wrapper
