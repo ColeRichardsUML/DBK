@@ -17,9 +17,6 @@
 
 
 # ---PARAMETERS---
-# ./DB_killer 
-
-
 Param (
 	# location you would like to save the process log to
 	[string]$log_path = "$env:USERPROFILE\Desktop\Powershell Logs\DB_killer",
@@ -73,8 +70,8 @@ Start-Transcript -Path $log_path\$log_name
 # detect if another instance of the script is already running
 # if yes, ask if user would like to close it and run this instance
 # close this instance if user selects not to close the other
-Write-Host "Checking if script is already running..."
-# check for duplicate here
+Write-Host "$time Checking if script is already running..."
+# check for duplicates here
 # if (duplicate = true)
 # Write-Host "Another instance of this script was detected, would you like to end that process and continue with this one?"
 # Write-Host "[y]: yes			[n]: no			[c]: continue with duplicate processes"
