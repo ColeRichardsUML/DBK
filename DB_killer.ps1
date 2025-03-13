@@ -63,6 +63,9 @@ $p_kill_err = "ERROR: UNABLE TO KILL PROCESS!"
 # time variable used to print the time to the log/console
 $time = (Get-Date).toString("yyyy/MM/dd HH:mm:ss") # init to startup time
 
+# ---FUNCTIONS---
+
+
 # ---SCRIPT START---
 # start logging
 Start-Transcript -Path $log_path\$log_name
@@ -70,8 +73,16 @@ Start-Transcript -Path $log_path\$log_name
 # detect if another instance of the script is already running
 # if yes, ask if user would like to close it and run this instance
 # close this instance if user selects not to close the other
-
-
+Write-Host "Checking if script is already running..."
+# check for duplicate here
+# if (duplicate = true)
+# Write-Host "Another instance of this script was detected, would you like to end that process and continue with this one?"
+# Write-Host "[y]: yes			[n]: no			[c]: continue with duplicate processes"
+# prompt user input => ui
+# if (ui = y) : kill duplicate instance and continue, prompt y/n for confirmation after warning
+# if (ui = n) : kill this instance, prompt y/n for confirmation after warning
+# if (ui = c) : continue this script, prompt y/n for confirmation after warning
+# else : invalid entry, retry user prompt
 
 # send start notification to IT here
 Write-Host "$time $op_str"
