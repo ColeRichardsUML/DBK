@@ -5,17 +5,6 @@
 # Release:		v1.1 3/6/25
 # View README.md for more info.
 
-# ---TODO:---
-# create a notification system (via email/push?) for IT
-#	- notification SFX
-#		- https://stackoverflow.com/questions/56032478
-# add more information for potentially necessary debug reasons
-# direct interaction with Dropbox
-#	- notify when syncing is finshed
-# general cleanup and refacturing
-
-
-
 # ---PARAMETERS---
 Param (
 	# location you would like to save the process log to
@@ -85,6 +74,8 @@ Start-Transcript -Path $log_path\$log_name
 
 # send start notification to IT here
 Write-Host "$time $op_str"
+
+
 
 while (1) { # run forever
 	$time = (Get-Date).toString("yyyy/MM/dd HH:mm:ss")
