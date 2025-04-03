@@ -14,11 +14,6 @@ function DBK_proc_kill {
         }
         Stop-Process -Name $config.process.name -ea SilentlyContinue
 
-        # DELETE THIS (Testing purposes only.)
-        <# if ($attempts -lt 25) {
-            Start-Process -FilePath $config.process.exe -WorkingDirectory $config.process.path
-        } #>
-
         # Check if successful, try again if not.
         Start-Sleep -Milliseconds 300 
 

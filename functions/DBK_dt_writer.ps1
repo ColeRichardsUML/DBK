@@ -24,8 +24,6 @@ function DBK_dt_writer {
         # String message that user would like to send.
         [Parameter(Position = 1, Mandatory = $true)][string] $message
     )
-
-    # Write-Debug "DBK_dt_writer has been called." # FOR TESTING
     
     $dt = Get-Date -Format "yyyy/MM/dd HH:mm:ss - "
 

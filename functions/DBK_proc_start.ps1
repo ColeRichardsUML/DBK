@@ -12,6 +12,4 @@ function DBK_proc_start {
         Start-Process -FilePath $config.process.exe -WorkingDirectory $config.process.path
     }
 
-    # return DBK_proc_is_running
-
 }
