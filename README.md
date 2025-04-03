@@ -16,4 +16,6 @@
  - ~~general cleanup and refacturing~~
 	- ~~functions~~
  - add an optional GUI wrapper
- - add installer and shortcuts to make progrma easier to use
+ - add installer and shortcuts to make program easier to use
+ - add auto update
+ - conversion to executable program
