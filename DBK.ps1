@@ -41,7 +41,6 @@ foreach ($file in $files) { . $file }
 
 
 # ./DBK_main.ps1
-Write-Debug "Running DBK_main"
 $end = $false
 Do {
 	if (DBK_drive_is_connected) {
