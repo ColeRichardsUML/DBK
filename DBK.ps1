@@ -5,10 +5,12 @@
     Version     : 1.2
 #>
 
-
 param (
 	[string] $config_file = "DBK_config.xml",
-	[switch] $Debug
+	[switch] $Debug,
+
+	[string] $log_path = "$env:USERPROFILE\Documents\PowerShell Logs\DBK",
+	[string] $log_name = ((Get-Date -Format "yyyy-MM-dd HH-mm-ss") + " - DBK.log")
 )
 
 
