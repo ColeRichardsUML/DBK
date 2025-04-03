@@ -1,0 +1,15 @@
+<root>
+
+    <!-- The drive letter of the drive that DBK will be checking  -->
+    <drive>D</drive> 
+    
+    <process>
+        <exe>Dropbox.exe</exe>
+        <name>Dropbox</name>
+        <path>C:\Program Files (x86)\Dropbox\Client</path>
+    </process>
+
+    <!-- The frequency at which DBK checks for updates (in seconds) -->
+    <tickrate>10</tickrate>
+
+</root>
