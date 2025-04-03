@@ -13,6 +13,7 @@
  - ~~direct interaction with Dropbox~~ 
 	- ~~notify when syncing is finshed~~
 	- Not technically possible: https://stackoverflow.com/questions/20060354/how-do-i-check-the-sync-status-of-a-dropbox-account-using-the-api
- - general cleanup and refacturing
-	- functions
+ - ~~general cleanup and refacturing~~
+	- ~~functions~~
  - add an optional GUI wrapper
+ - add installer and shortcuts to make progrma easier to use
