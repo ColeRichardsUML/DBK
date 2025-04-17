@@ -7,22 +7,19 @@
 
 param (
 	[string] $config_file = "DBK_config.xml",
-	[switch] $Debug,
-
-	[string] $log_path = "$env:USERPROFILE\Documents\PowerShell Logs\DBK",
-	[string] $log_name = ((Get-Date -Format "yyyy-MM-dd HH-mm-ss") + " - DBK.log")
+	[switch] $Debug
 )
 
 
 <# STARTUP ROUTINE #>
-# Start log
-Start-Transcript -Path $log_path\$log_name
-
 # Set DebugPreference based on -debug switch
 if ($Debug) { $DebugPreference = "Continue" }
 
 # Load configuration file (DBK_config.xml)
 $config = ([xml](Get-Content $config_file)).root
+
+# Start logging
+
 
 # Import functions
 $files = Get-ChildItem -Path .\functions

@@ -2,7 +2,14 @@
 
     <!-- The drive letter of the drive that DBK will be checking  -->
     <drive>D</drive> 
+
+    <!-- parameters relating to the generation of the log -->
+    <log>
+        <path>"\Documents\PowerShell Logs\DBK"</path>
+        <name>"DBK_log.log"</name>
+    </log>
     
+    <!-- parameters relating to the process the program will be monitoring and manipulating-->
     <process>
         <exe>Dropbox.exe</exe>
         <name>Dropbox</name>
