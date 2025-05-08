@@ -2,11 +2,12 @@
 .NOTES
     Author      : Colman Richards @Diversified-Colman-Richards
     GitHub      : https://github.com/Diversified-Colman-Richards/DB_killer
-    Version     : 1.2
+    Version     : 0.2.1
 #>
 
 param (
 	[string] $config_file = "DBK_config.xml",
+	[string] $gui_config_file = "DBK_GUI_XML.xaml",
 	[switch] $Debug
 )
 
@@ -18,8 +19,9 @@ if ($Debug) { $DebugPreference = "Continue" }
 # Load configuration file (DBK_config.xml)
 $config = ([xml](Get-Content $config_file)).root
 
-# Start logging
-
+# Load DLLs
+Add-Type -AssemblyName PresentationFramework
+Add-Type -AssemblyName System.Windows.Forms
 
 # Import functions
 $files = Get-ChildItem -Path .\functions

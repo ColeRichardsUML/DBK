@@ -12,6 +12,7 @@
     <!-- parameters relating to the process the program will be monitoring and manipulating-->
     <process>
         <exe>Dropbox.exe</exe>
+        <name_matches_exe>$True</name_matches_exe>
         <name>Dropbox</name>
         <path>C:\Program Files (x86)\Dropbox\Client</path>
     </process>
